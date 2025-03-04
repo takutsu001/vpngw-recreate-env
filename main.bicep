@@ -46,7 +46,7 @@ module section
 ---------------
 */
 
-// Create Hub Environment (VM-Linux VNet, Subnet, NSG, VNet Peering, VPN Gateway, Local Network Gateway)
+// Create Hub Environment (VPN Gateway, Local Network Gateway)
 module HubModule './modules/hubEnv.bicep' = { 
   scope: newRG 
   name: 'CreateHubEnv' 
@@ -59,7 +59,7 @@ module HubModule './modules/hubEnv.bicep' = {
   } 
 }
 
-// Create Onpre Environment (VM-Linux VNet, Subnet, NSG, Vnet Peering, VPN Gateway, Local Network Gateway)
+// Create Onpre Environment (VPN Gateway, Local Network Gateway)
 module OnpreModule './modules/onpreEnv.bicep' = { 
   scope: newRG 
   name: 'CreateOnpreEnv' 
