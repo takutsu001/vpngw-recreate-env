@@ -66,6 +66,7 @@ az logout
 本 Bicep では Local Network Gateway のアドレス空間は VPNGW が存在する仮想ネットワークのみが追加されて作成されます。必要に応じて、アドレス空間を追加するようにしてください
 
 本 Bicep で作成される LNG のアドレス空間
+
 [Azure側のLNG]
 ![](/images/vpngw-recreate-AzureLNG.png)
 
